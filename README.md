@@ -19,12 +19,16 @@ python main_SA.py
 
 ## Results
 ### IP dataset
-<center>
-![3D HSI Saliency Cube](https://github.com/Lee-zl/S3A/blob/main/IP.gif?raw=true)
+<p align="center">
+  <img src="https://github.com/Lee-zl/S3A/blob/main/IP.gif?raw=true" width="500" alt="3D HSI Saliency Cube">
+</p>
+
 
 ### PU dataset
-</center>
-![3D HSI Saliency Cube](https://github.com/Lee-zl/S3A/blob/main/PU.gif?raw=true)
+<p align="center">
+  <img src="https://github.com/Lee-zl/S3A/blob/main/PU.gif?raw=true" width="500" alt="3D HSI Saliency Cube">
+</p>
+
 
 ## References
 - X. Luo, L. Zhang, P. Gan, X. Shi and L. Bian, "S3A: A Self-Supervised Saliency Analysis Framework for Hyperspectral Image," in IEEE Transactions on Geoscience and Remote Sensing, vol. 63, pp. 1-23, 2025, Art no. 5512423, doi: 10.1109/TGRS.2025.3564459.
