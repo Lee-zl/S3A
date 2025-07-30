@@ -1,42 +1,36 @@
-# ELR
-This is an official PyTorch implementation of ELR method proposed in [Early-Learning Regularization Prevents Memorization of Noisy Labels](https://arxiv.org/abs/2007.00151). 
+# S3A
+This is an official PyTorch implementation of S3A method proposed in [S3A: A Self-Supervised Saliency Analysis Framework for Hyperspectral Image](https://ieeexplore.ieee.org/abstract/document/10976650). 
 
 
 ## Usage
-Train the network on the Symmmetric Noise CIFAR-10 dataset (noise rate = 0.8):
+Train the network on the Indian Pines dataset:
 
 ```
-python train.py -c config_cifar10.json --percent 0.8
+python main_IP.py
 ```
-Train the network on the Asymmmetric Noise CIFAR-10 dataset (noise rate = 0.4):
+Train the network on the Pavia University dataset:
 
 ```
-python train.py -c config_cifar10_asym.json --percent 0.4 --asym 1
+python main_PU.py
 ```
 
-Train the network on the Asymmmetric Noise CIFAR-100 dataset (noise rate = 0.4):
+Train the network on the Salinas dataset:
 
 ```
-python train.py -c config_cifar100.json --percent 0.4 --asym 1
+python main_SA.py
 ```
 
 The config files can be modified to adjust hyperparameters and optimization settings. 
 
 ## Results
-### CIFAR10
+### IP dataset
 <center>
 
-| Method                 |  20%        |    40%      |   60%        |      80%    |    40% Asym |
-| ---------------------- | ----------- | ----------- | -----------  | ----------- | ----------- |
-| ELR                    | 91.16%      | 89.15%      |  86.12%      | 73.86%      |     90.12%  |
-| ELR (cosine annealing) | 91.12%      | 91.43%      |  88.87%      | 80.69%      |    90.35%   |
 
-### CIAFAR100
 
-| Method                 |  20%        |    40%      |   60%        |      80%    |    40% Asym |
-| ---------------------- | ----------- | ----------- | -----------  | ----------- | ----------- |
-| ELR                    | 74.21%      | 68.28%      |  59.28%      | 29.78%      |    73.71%  |
-| ELR (cosine annealing) | 74.68%      | 68.43%      |  60.05%      | 30.27%      |    73.96%   |
+### PU dataset
+
+
 
 </center>
 
